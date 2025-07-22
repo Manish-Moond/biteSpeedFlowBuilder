@@ -1,0 +1,211 @@
+#root {
+  text-align: center;
+}
+
+.header {
+  width: 100vw;
+  height: 7vh;
+  background-color: #ffffff;
+  border-bottom: #ccc 1px solid;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .warning-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #0b0b0b;
+      font-weight: bold;
+      background-color: #fbcbcc;
+      padding: .2rem .4rem;
+      border-radius: 4px;
+    }
+
+    .save-button {
+      position: absolute;
+      right: 4rem;
+      top: 0.4rem;
+      color: rgb(40, 117, 233);
+      background-color: #ffffff;
+      border: 1px solid #2c2c2c;
+      cursor: pointer;
+      font-size: 1em;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .save-button:hover {
+      border-color: rgb(40, 117, 233);
+      box-shadow: 0 0 8px rgba(40, 117, 233, 0.6);
+    }
+  }
+}
+
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 92vh;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  .flow-builder {
+    width: 80vw;
+    height: 100%;
+    border-right: #ccc 1px solid;
+
+    .flow-builder {
+      width: 80vw;
+      height: 92vh;
+      background-color: #ffffff;
+      position: relative;
+
+    }
+
+    .settings-panel {
+      position: absolute;
+      top: 7.5vh;
+      right: 0;
+      width: 20vw;
+      height: 92vh;
+      background-color: #ffffff;
+      border-left: #ccc 1px solid;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+      .settings-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: #ccc 1px solid;
+        position: relative;
+
+        .close-button {
+          position: absolute;
+          left: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          color: #888;
+          width: 14px;
+          height: 14px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #333;
+          padding: 0rem;
+          margin: .2rem;
+        }
+      }
+
+      .settings-content {
+        p {
+          font-size: 1rem;
+          color: #8f8f8f;
+          padding: 0rem;
+          margin: .2rem;
+          text-align: start;
+        }
+
+        textarea {
+          width: 90%;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 0.5rem;
+          font-size: 1rem;
+          color: #333;
+        }
+      }
+    }
+
+  }
+
+  .node-panel {
+    width: 20vw;
+    height: 100%;
+
+    .node-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #000000;
+      padding: 0.5rem;
+      cursor: pointer;
+      margin: 1rem;
+      border: #ccc 1px solid;
+      width: 8rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+
+      p {
+        color: #4884e5
+      }
+    }
+  }
+
+
+}
+
+.text-node.selected {
+  border-color: #353535;
+}
+
+.text-node {
+  background-color: #fff;
+  border: 1px solid #d2d2d2;
+  border-radius: 8px;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  color: #222;
+
+  .text-content {
+    padding: 4px 0;
+  }
+
+  .text-node-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #B3EFE7;
+    border-radius: 7px 7px 0 0;
+    padding: 0px 4px;
+
+    .message-icon {
+      width: 10px;
+      height: 10px;
+      margin-right: .2rem;
+    }
+
+    p {
+      font-size: 8px;
+      margin: .2rem;
+    }
+
+    .whatsapp-logo {
+      width: 10px;
+      height: 10px;
+      margin-left: auto;
+    }
+  }
+
+  .text-node-content {
+    margin: .4rem;
+    text-align: start;
+
+    p {
+      font-size: 8px;
+      margin: .2rem;
+    }
+  }
+}
